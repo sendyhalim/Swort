@@ -6,11 +6,28 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXFileReference section */
+		7946EE7320B1F15B004A438B /* AsciiArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsciiArt.swift; sourceTree = "<group>"; };
+		7946EE7420B1F15C004A438B /* Bitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
+		7946EE7520B1F15C004A438B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		7946EE6B20B1F0F6004A438B = {
 			isa = PBXGroup;
 			children = (
+				7946EE7220B1F131004A438B /* Sources */,
 			);
+			sourceTree = "<group>";
+		};
+		7946EE7220B1F131004A438B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7946EE7320B1F15B004A438B /* AsciiArt.swift */,
+				7946EE7420B1F15C004A438B /* Bitmap.swift */,
+				7946EE7520B1F15C004A438B /* Color.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

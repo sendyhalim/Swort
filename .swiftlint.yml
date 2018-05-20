@@ -1,0 +1,13 @@
+line_length:
+  warning: 120
+  error: 150
+disabled_rules:
+  - identifier_name
+  - force_cast
+  - force_try
+  - function_body_length
+  - syntactic_sugar
+  - shorthand_operator
+included:
+  - Sources
+  - Tests

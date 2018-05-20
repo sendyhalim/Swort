@@ -22,6 +22,6 @@ func toRGBA(red: Double, green: Double, blue: Double, alpha: Double) -> Color.RG
     doubleToRGBBased(doubleValue: red),
     doubleToRGBBased(doubleValue: green),
     doubleToRGBBased(doubleValue: blue),
-    alph
+    alpha
   )
 }

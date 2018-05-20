@@ -1,3 +1,6 @@
+build:
+	swift build
+
 synx:
 	synx Swort.xcodeproj
 

@@ -76,6 +76,6 @@ public func createAsciiArt(
       return acc + guessCharacter(cursor: cursor, block: blockSize, image: image, characters: characters)
     }
 
-    retrn next + "\n"
+    return next + "\n"
   }
 }

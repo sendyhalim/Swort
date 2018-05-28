@@ -56,7 +56,7 @@ public let defaultAsciiArtCharacters: Array<String> = Array<String>([
   "O", "0", "Q", "C", "Y", "X", "c", "x", "r", "j", "f", "t",
   "/", "\\", "|", "(", ")", "1", "{", "}", "[", "]", "-", "+", ";", ",", "\"", "^", "`",
   "\'", ",", ",", ".", ".", " ", " ", " ", " ", " ", " "
-  ].reversed())
+].reversed())
 
 /// Generate an ASCII art string where each character will represent
 /// 1 block with size `blockSize`.

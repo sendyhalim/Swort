@@ -2,7 +2,7 @@
 public struct Color {
   public typealias RGBA = (Int, Int, Int, Double)
 
-  let rgba: RGBA
+  public let rgba: RGBA
 
   func grayScale() -> Double {
     let (red, green, blue, _) = rgba

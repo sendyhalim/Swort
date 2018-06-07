@@ -4,6 +4,10 @@ public struct Color {
 
   public let rgba: RGBA
 
+  public init(rgba: Color.RGBA) {
+    self.rgba = rgba
+  }
+
   func grayScale() -> Double {
     let (red, green, blue, _) = rgba
 

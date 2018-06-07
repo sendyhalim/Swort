@@ -17,7 +17,7 @@ func doubleToRGBBased(doubleValue: Double) -> Int {
   return Int(doubleValue * 255)
 }
 
-func toRGBA(red: Double, green: Double, blue: Double, alpha: Double) -> Color.RGBA {
+public func toRGBA(red: Double, green: Double, blue: Double, alpha: Double) -> Color.RGBA {
   return (
     doubleToRGBBased(doubleValue: red),
     doubleToRGBBased(doubleValue: green),

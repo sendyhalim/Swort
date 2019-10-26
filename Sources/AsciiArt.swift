@@ -68,14 +68,20 @@ public func createAsciiArt(
   let size = calculateAsciiArtSize(blockSize: blockSize, actualSize: image.getSize())
   let xs = Array(0 ..< Int(size.width))
   let ys = Array(0 ..< Int(size.height))
+  var chars: [String] = []
 
-  return ys.reduce("") { acc, y in
-    let next = xs.reduce(acc) { acc, x in
+  // I should've use GPU (Metal in apple platform / OpenGL linux) compute command
+  // for faster calculations, but until then let's just stick with normal loop with CPU.
+  for y in ys {
+    for x in xs {
       let cursor = (x * Int(blockSize.width), y * Int(blockSize.height))
+      let char = guessCharacter(cursor: cursor, block: blockSize, image: image, characters: characters)
 
-      return acc + guessCharacter(cursor: cursor, block: blockSize, image: image, characters: characters)
+      chars.append(char)
     }
 
-    return next + "\n"
+    chars.append("\n")
   }
+
+  return chars.joined()
 }
